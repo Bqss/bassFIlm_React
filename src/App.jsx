@@ -12,7 +12,14 @@ function App() {
   const [films, setFilms] = useState([]);
   return (
     <div className="container">
-      <Component/>
+      <BrowserRouter>
+        <Routes>
+          <Navbar/>
+          <Route path='/' element={<Home setFilms={setFilms} films={films}/>} />
+          <Route path='/:title' element={<MovieDetail/>}/>
+          <Footer/>
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }
