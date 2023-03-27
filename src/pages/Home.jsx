@@ -31,8 +31,8 @@ const Home = ({ films, setFilms }) => {
         <div className="loader">Loading...</div>
       ) : (
         <div className="films">
-          {films?.map((film) => (
-            <FilmCard data={film} />
+          {films?.map((film, i) => (
+            <FilmCard key={i} data={film} />
           ))}
         </div>
       )}
