@@ -1,0 +1,169 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+form {
+  width: 100%;
+}
+input,
+button {
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.3s;
+  padding: 0.5em 1.5em;
+  border-radius: 0.5rem;
+}
+
+body {
+  background: black;
+  
+}
+
+/*  */
+
+.container {
+  max-width: 1080px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.button {
+  
+  background: white;
+  border-width: 0.2rem;
+  cursor: pointer;
+}
+
+.btn-1 {
+  border-color: transparent;
+  color: white;
+  background: rgb(237, 2, 2);
+}
+.btn-1:hover {
+  background: rgba(223, 1, 1, 0.967);
+}
+.btn-2 {
+  border-color: transparent;
+  color: white;
+  background: black;
+}
+.btn-2:hover {
+  background: white;
+  border-color: black;
+  color: black;
+}
+
+.footer{
+  padding-block: 2rem ;
+  margin-top: 4rem;
+  display: flex;
+  margin-top: auto;
+  justify-content: center;
+  color: white;
+}
+.loader{
+  color: white;
+}
+
+.navbar {
+  padding-block: 1.5rem;
+}
+.navbar__logo {
+  font-size: 2.5rem;
+  color: red;
+  font-weight: 700;
+}
+
+.searchFilm {
+  display: flex;
+  flex-direction: column;
+  gap:.7rem;
+  align-items: end;
+}
+
+.searchFilm__input {
+  position: relative;
+  background: white;
+  width: min(80%, 40rem);
+}
+
+.searchFilm__input:focus {
+  box-shadow: 0 0 0.1rem 1px cyan;
+}
+
+
+.films{
+  margin-top: 5em;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px,320px));
+  justify-content: center;
+  gap: 2rem;
+  place-items: center;
+  
+}
+.filmCard{
+  width: 100%;
+  background-color: rgb(230, 227, 227);
+  border-radius: .6em;
+  overflow: hidden;
+  color: black;
+}
+.filmCard__poster{
+  width: 100%;
+  aspect-ratio: 10/12;
+  object-fit: cover;
+}
+.filmCard__body{
+  padding: 1em;  
+}
+
+.filmCard__description{ 
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+
+
+.filmDetail{
+  margin-top: 3rem;
+  display: flex;
+  gap: 2rem;
+}
+.filmDetail__poster{
+  width: 20rem;
+  aspect-ratio: 10/13;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.filmDetail__plot{
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.filmDetail__description{
+  color: white  ;
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+  
+}
+
+
+
+
